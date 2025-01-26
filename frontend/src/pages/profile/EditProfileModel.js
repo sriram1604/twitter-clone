@@ -93,7 +93,7 @@ const EditProfileModal = () => {
 								type='password'
 								placeholder='Current Password'
 								className='flex-1 input border border-gray-700 rounded p-2 input-md'
-								value={formData.currentPassword}
+								
 								name='currentPassword'
 								onChange={handleInputChange}
 							/>
@@ -101,7 +101,7 @@ const EditProfileModal = () => {
 								type='password'
 								placeholder='New Password'
 								className='flex-1 input border border-gray-700 rounded p-2 input-md'
-								value={formData.newPassword}
+								
 								name='newPassword'
 								onChange={handleInputChange}
 							/>
