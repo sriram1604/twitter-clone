@@ -5,9 +5,13 @@ import cloudinary from 'cloudinary';
 export const getProfile = async (req,res) => {
     try {
         const {username} = req.params;
-        
-        const user = await User.findOne({username})
 
+        
+
+
+        const user = await User.findOne({username})
+       
+        
         if(!user){
             return res.status(404).json({error : "User not found"});
         }
